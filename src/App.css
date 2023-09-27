@@ -1,38 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---------HEADER ---------- */
+header {
+  background-color: crimson;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*-------- TITULO --------*/
+h1 {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*------DIV CARRITO-NAV-------*/
+.div-nav-carrito {
+  display: flex;
+  align-items: center;
+}
+
+
+/*-------- NAV LIST --------*/
+header .container-item-list ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-right: 70px;
+}
+
+header .container-item-list ul .nav-list-item {
+  text-decoration: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+/*--------- NAV CART ----------*/
+.carrito-header {
+  text-decoration: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 12px;
+  align-items: center;
+  display: flex;
+
+}
+
+#numero-carrito {
+  padding: 4px;
+  background-color: firebrick;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+
+/*--------- ITEM LIST CONTAINER ------------*/
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.9rem;
+  color: firebrick;
 }
