@@ -1,20 +1,19 @@
 import "./App.css";
-import { ItemListContainer } from "./components/ItemListContainer";
-import { NavBar } from "./components/NavBar";
+import NavBar from "./components/presentacion/NavBar";
+
 
 function App() {
   return (
     <div className="App">
-
       <header>
-        <h1>Vintage del sur</h1>
         <NavBar />
       </header>
 
       <main>
-        <ItemListContainer
-          greetings="Estimado usuario, esta pagina se encuentra en creacion!"
-        />
+        <h2>Bienvenidos a vintage del sur</h2>
+        <h3>¿Quienes somos?</h3>
+        <p>Vintage del sur es una pagina y emprendimiento creado por dos amigos, nos encontramos en "direccion"</p>
+        <h3>Todos los productos</h3>
       </main>
     </div>
   );

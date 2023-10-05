@@ -8,70 +8,27 @@ body {
   text-align: center;
 }
 
+/*------------ ICON DE CARRITO --------------*/
 
-/* ---------HEADER ---------- */
-header {
-  background-color: crimson;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-
-/*-------- TITULO --------*/
-h1 {
-  color: whitesmoke;
-  font-size: 2rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-left: 12px;
-}
-
-
-/*------DIV CARRITO-NAV-------*/
-.div-nav-carrito {
-  display: flex;
-  align-items: center;
-}
-
-
-/*-------- NAV LIST --------*/
-header .container-item-list ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  margin-right: 70px;
-}
-
-header .container-item-list ul .nav-list-item {
-  text-decoration: none;
-  color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.2rem;
-}
-
-/*--------- NAV CART ----------*/
 .carrito-header {
   text-decoration: none;
-  color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-right: 12px;
   align-items: center;
   display: flex;
+}
 
+.png-carrito {
+  background-color: white;
+  padding: 2px;
+  border-radius: 30px;
 }
 
 #numero-carrito {
-  padding: 4px;
-  background-color: firebrick;
   border-radius: 10px;
-  margin-left: 4px;
+  font-size: 1.2rem;
+  margin-left: 5px;
 }
 
 
-/*--------- ITEM LIST CONTAINER ------------*/
-h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.9rem;
-  color: firebrick;
-}
+/*----------- MAIN -----------*/
+
