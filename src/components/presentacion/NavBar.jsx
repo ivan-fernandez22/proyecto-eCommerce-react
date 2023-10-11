@@ -13,7 +13,7 @@ function NavBar() {
 
     return (
         <div>
-            <NavContainer >
+            <NavContainer fixed="top">
                 <h1>Vintage del sur</h1>
                 <div className= {`nav-list ${clicked ? 'active' : ''}`}>
                     <a href="/">Home</a>
@@ -34,11 +34,12 @@ function NavBar() {
 export default NavBar
 
 const NavContainer = styled.nav`
-    padding: .4rem;
+    padding: .8rem;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
     h1 {
         color: white;
         font-size: 1.6rem
@@ -80,7 +81,7 @@ const NavContainer = styled.nav`
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top: 30%;
+        top: 15%;
         left: 0;
         right: 0;
         text-align: center;
@@ -108,9 +109,9 @@ const BgDiv = styled.div `
     transition: all .6s ease;
     &.active {
         width: 100%;
-        height: 100%;
+        height: 80%;
         top: 0;
         left: 0;
-        border-radius: 0 0 80% 0;
+        border-radius: 0 0 85% 0;
     }
 `

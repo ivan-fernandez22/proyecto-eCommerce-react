@@ -1,5 +1,8 @@
 import "./App.css";
+import Bienvenida from "./components/presentacion/Bienvenida"
+import Slider from "./components/presentacion/Slider";
 import NavBar from "./components/presentacion/NavBar";
+import TarjetaInformacion from "./components/presentacion/TarjetaInformacion"
 
 
 function App() {
@@ -10,10 +13,9 @@ function App() {
       </header>
 
       <main>
-        <h2>Bienvenidos a vintage del sur</h2>
-        <h3>¿Quienes somos?</h3>
-        <p>Vintage del sur es una pagina y emprendimiento creado por dos amigos, nos encontramos en "direccion"</p>
-        <h3>Todos los productos</h3>
+        <Bienvenida />
+        <Slider />
+        <TarjetaInformacion />
       </main>
     </div>
   );

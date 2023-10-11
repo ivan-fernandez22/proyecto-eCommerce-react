@@ -2,10 +2,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: whitesmoke;
 }
 
 .App {
-  text-align: center;
+  text-align: center !important;
+  justify-content: center;
 }
 
 /*------------ ICON DE CARRITO --------------*/
@@ -31,4 +33,108 @@ body {
 
 
 /*----------- MAIN -----------*/
+.h2-bienvenida {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  font-size: 1.9rem;
+  margin-top: 1rem;
+}
 
+.texto-bienvenida {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  font-size: 1.1rem;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-left: 0.5rem;
+}
+
+.carousel {
+  width: 100vw;
+}
+
+.carousel-item {
+  height: 300px;
+}
+
+
+
+
+#info-contenedor {
+  width: 100%;
+  background-color: #202b34;
+  margin-top: 3rem;
+}
+
+#info-envios-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.bi-truck {
+  margin-right: 10px;
+  margin-top: 6px;
+  font-size: 40px;
+  color: white
+}
+
+.info-envios-estructura {
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+#info-envios-titulo {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#info-envios-texto {
+  font-size: 1rem;
+  margin-top: -10px;
+  color: white;
+}
+
+
+#info-pagos-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bi-credit-card-fill {
+  margin-top: 5px;
+  font-size: 40px;
+  margin-right: 10px;
+  color: white;
+}
+
+.info-pagos-estructura {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+#info-pagos-titulo {
+  font-size: 1.2rem;
+  color: white;
+}
+
+
+#info-wspp-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-right: 28px;
+}
+
+.bi-whatsapp {
+  margin-top: -18px;
+  font-size: 40px;
+  margin-right: 10px;
+  color: white;
+}
+
+  #info-wspp-titulo {
+  font-size: 1.2rem;
+  color: white;
+}
