@@ -32,11 +32,11 @@ body {
 }
 
 
-/*----------- MAIN -----------*/
+/*----------- BIENVENIDA -----------*/
 .h2-bienvenida {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
   font-size: 1.9rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .texto-bienvenida {
@@ -47,17 +47,19 @@ body {
   margin-left: 0.5rem;
 }
 
+
+/*---------- CARRUSEL ----------*/
 .carousel {
   width: 100vw;
+  margin-top: 5.5rem;
 }
 
 .carousel-item {
-  height: 300px;
+  height: 400px;
 }
 
 
-
-
+/*--------- SECCION INFORMACION -----------*/
 #info-contenedor {
   width: 100%;
   background-color: #202b34;
@@ -137,4 +139,108 @@ body {
   #info-wspp-titulo {
   font-size: 1.2rem;
   color: white;
+}
+
+
+
+/*------------CATEGORIAS-----------*/
+.div-categorias {
+  margin-top: 2rem;
+}
+
+.categorias {
+  width: 80%;
+}
+
+.foto-categorias {
+  width: 80%;
+  height: 400px;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 10px 10px black;
+}
+
+
+
+/*-----------ITEM LIST----------*/
+.titulo-productos-destacados {
+  margin-top: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  font-size: 2rem;
+}
+
+.productos-div {
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  margin-left: 5vw;
+  gap: 30px 20px;
+}
+
+
+
+/*------------ITEM-----------*/
+.producto {
+  border: 2px solid black;
+  border-radius: 10px 10px;
+  height: 280px;
+  font-size: 0.8rem
+}
+
+.img-producto {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px 9px 0px 0px;
+  border: 1px solid black;
+}
+
+.ver-mas {
+  border-radius: 40px;
+  padding: 10px;
+  background-color: #202b34;
+  text-decoration: none;
+  color: white
+}
+
+
+
+/*-------------ITEM DETAIL ----------------*/
+.item-detail {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 3rem;
+}
+
+.item-detail-img {
+  width: 100%;
+  height: 400px;
+}
+
+.item-detail-nombre {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+.item-detail-descripcion {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  font-size: 1.2rem;
+}
+
+.item-detail-cuidados {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+  font-size: 1.1rem;
+}
+
+.item-detail-precio {
+  font-size: 1.3rem;
+}
+
+
+
+/*-------*/
+.titulo-categoria {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  margin-top: 5rem;
 }

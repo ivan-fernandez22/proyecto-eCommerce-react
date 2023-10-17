@@ -1,0 +1,56 @@
+[
+    {
+        "nombre": "Remera 23", 
+        "descripcion": "Remera logo 23 oversize, unisex y en color negro", 
+        "cuidados": "Lavar en agua fria, A mano del lado del reves, No usar lavandina, No secar a maquina, No planchar sobre estampa",
+        "categoria": "Remeras",
+        "precio": 6000,
+        "id": 1,
+        "imagen": ""
+    },
+    {
+        "nombre": "Remera Bear",
+        "descripcion": "Remera Bear oversize, unisex y en color rosa", 
+        "cuidados": "Lavar en agua fria, A mano del lado del reves, No usar lavandina, No secar a maquina, No planchar sobre estampa",
+        "categoria": "Remeras",
+        "precio": 6000,
+        "id": 2,
+        "imagen": ""
+    },
+    {
+        "nombre": "Remera Blessings",
+        "descripcion": "Remera Blessings oversize, unisex y en color negro", 
+        "cuidados": "Lavar en agua fria, A mano del lado del reves, No usar lavandina, No secar a maquina, No planchar sobre estampa",
+        "categoria": "Remeras",
+        "precio": 6500,
+        "id": 3,
+        "imagen": ""
+    },
+    {
+        "nombre": "Remera Butterfly",
+        "descripcion": "Remera Butterfly oversize, unisex y en color negro",
+        "cuidados": "Lavar en agua fria, A mano del lado del reves, No usar lavandina, No secar a maquina, No planchar sobre estampa",
+        "categoria": "Remeras",
+        "precio": 7000,
+        "id": 4,
+        "imagen": ""
+    },
+    {
+        "nombre": "Remera Rose",
+        "descripcion": "Remera Rose oversize, unisex y en color blanca", 
+        "cuidados": "Lavar en agua fria, A mano del lado del reves, No usar lavandina, No secar a maquina, No planchar sobre estampa",
+        "categoria": "Remeras",
+        "precio": 6500,
+        "id": 5,
+        "imagen": ""
+    },
+    {
+        "nombre": "Remera Black Dragon",
+        "descripcion": "Remera Black Dragon oversize, unisex y en color negro", 
+        "cuidados": "Lavar en agua fria, A mano del lado del reves, No usar lavandina, No secar a maquina, No planchar sobre estampa",
+        "categoria": "Remeras",
+        "precio": 7000,
+        "id": 6,
+        "imagen": ""
+    }
+]

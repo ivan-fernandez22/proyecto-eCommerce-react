@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import CartWidget from "../contenedores/CartWidget";
 import BotonHamburguesa from '../contenedores/BotonHamburguesa';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
 
@@ -13,13 +14,13 @@ function NavBar() {
 
     return (
         <div>
-            <NavContainer fixed="top">
-                <h1>Vintage del sur</h1>
+            <NavContainer>
+                <Link to="/"><h1>Vintage del sur</h1></Link>
                 <div className= {`nav-list ${clicked ? 'active' : ''}`}>
-                    <a href="/">Home</a>
-                    <a href="/">Buzos</a>
-                    <a href="/">Remerones</a>
-                    <a href="/">Pantalones</a>
+                    <Link to="/"> Home </Link>
+                    <Link to="/Buzos"> Buzos </Link>
+                    <Link to="/Remeras"> Remeras </Link>
+                    <Link to="/Pantalones"> Pantalones </Link>
                     <CartWidget />
                 </div>
                 <div className='hamburguesa'>
@@ -109,9 +110,9 @@ const BgDiv = styled.div `
     transition: all .6s ease;
     &.active {
         width: 100%;
-        height: 80%;
+        height: 70%;
         top: 0;
         left: 0;
-        border-radius: 0 0 85% 0;
+        border-radius: 0 0 90% 0;
     }
 `
