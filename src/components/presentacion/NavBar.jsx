@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import CartWidget from "../contenedores/CartWidget";
 import BotonHamburguesa from '../contenedores/BotonHamburguesa';
+import CartWidget from "../contenedores/CartWidget"
 import { Link } from 'react-router-dom';
 
 function NavBar() {
@@ -16,18 +16,22 @@ function NavBar() {
         <div>
             <NavContainer>
                 <Link to="/"><h1>Vintage del sur</h1></Link>
-                <div className= {`nav-list ${clicked ? 'active' : ''}`}>
-                    <Link to="/"> Home </Link>
-                    <Link to="/Buzos"> Buzos </Link>
-                    <Link to="/Remeras"> Remeras </Link>
-                    <Link to="/Pantalones"> Pantalones </Link>
+                <div className="contenedor-carrito-nav">
                     <CartWidget />
-                </div>
-                <div className='hamburguesa'>
-                    <BotonHamburguesa clicked={clicked} handleClick={handleClick} />
-                </div>
-                <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
-            </NavContainer>
+                    <div className= {`nav-list ${clicked ? 'active' : ''}`}>
+                        <Link to="/"> Inicio </Link>
+                        <Link to="/productos">Productos</Link>
+                        <Link to="/productos/buzos"> Buzos </Link>
+                        <Link to="/productos/remeras"> Remeras </Link>
+                        <Link to="/productos/pantalones"> Pantalones </Link>
+                        <Link to="/Contacto"> Contacto </Link>
+                    </div>
+                    <div className='hamburguesa'>
+                        <BotonHamburguesa clicked={clicked} handleClick={handleClick} />
+                    </div>
+                        <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
+                    </div>
+                </NavContainer>
         </div>
     )
 }
@@ -36,7 +40,7 @@ export default NavBar
 
 const NavContainer = styled.nav`
     padding: .8rem;
-    background-color: #333;
+    background-color: #6a4e36;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,7 +105,7 @@ const NavContainer = styled.nav`
 
 const BgDiv = styled.div `
     position: absolute;
-    background-color: #222;
+    background-color: black;
     top: -1400px;
     left: -1000px;
     width: 100%;

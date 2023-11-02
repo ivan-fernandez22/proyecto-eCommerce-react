@@ -4,7 +4,7 @@ export const products = () => {
     return new Promise ((resolve, reject) => {
         setTimeout ( () => {
             resolve (productosData)
-        }, 2000)
+        }, 500)
     })
 }
 
