@@ -40,7 +40,7 @@ function Footer() {
 
             <section className="footer-copyright">
                 <p className="copyright-texto">
-                    <i className="bi bi-c-circle"></i> Todos los derechos reservados LeParadis
+                    <i className="bi bi-c-circle"></i> Todos los derechos reservados Vintage del sur
                 </p>
             </section>
         </>
