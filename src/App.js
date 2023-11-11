@@ -8,6 +8,7 @@ import Carrito from "./pages/Carrito"
 import Footer from "./components/presentacion/Footer";
 import { CarritoProvider } from "./context/CarritoContext";
 import BasicExample from "./components/presentacion/NavBarBootstrap";
+import Checkout from "./components/contenedores/Checkout";
 
 
 function App() {
@@ -25,9 +26,10 @@ function App() {
               <Route path="/" element={<Inicio />} />
               <Route path="/productos" element={<ItemListContainer />} />
               <Route path="/productos/:categoria" element={<ItemListContainer />} />
+              <Route path="/item/:id" element={<ItemDetailContainer />} />
               <Route path="/Contacto" element={<Contacto />} />
               <Route path="/Carrito" element={<Carrito />} />
-              <Route path="/item/:id" element={<ItemDetailContainer />} />
+              <Route path="/Checkout" element={<Checkout />} />
             </Routes>
           </main>
 

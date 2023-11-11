@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import foto1 from '../../imgs/remeraButterfly.jpg'
-import foto2 from '../../imgs/remeron1.jpg'
-import foto3 from '../../imgs/jean1.jpg'
+import foto1 from '../../imgs/Black-Dragon-Naranja (1) (1).jpg'
+import foto2 from '../../imgs/buzoCupido (1).jpg'
+import foto3 from '../../imgs/remeraBear (1).jpg'
 
 function Slider() {
     return (

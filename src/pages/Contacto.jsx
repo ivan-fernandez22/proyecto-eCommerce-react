@@ -1,11 +1,18 @@
 import { useForm } from "react-hook-form"
+import Swal from "sweetalert2";
+
 
 function Contacto () {
 
     const { register, handleSubmit } = useForm()
 
     const enviar = (d) => {
-        console.log(d)
+        Swal.fire({
+            title: "Consulta enviada con exito",
+            text: "Pronto nos pondremos en contacto contigo!",
+            icon: "success"
+        });
+
     }
 
     return (

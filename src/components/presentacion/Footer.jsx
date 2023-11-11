@@ -28,19 +28,9 @@ function Footer() {
                 <img src={tarjetasPng} className="pagos-img" alt="tarjetas de credito que se aceptan"/>
             </section>
 
-            <section className="footer-email">
-                <h2 className="email-titulo">Ingresa tu mail para recibir descuentos únicos</h2>
-                <div className="email-div-formulario">
-                    <form id="formulario-email">
-                        <input type="email" id="email-recuadro" />
-                            <input id="email-enviar" type="submit" value="Enviar" />
-                    </form>
-                </div>
-            </section>
-
             <section className="footer-copyright">
                 <p className="copyright-texto">
-                    <i className="bi bi-c-circle"></i> Todos los derechos reservados Vintage del sur
+                    <i className="bi bi-c-circle"></i> Todos los derechos reservados Southern Essences
                 </p>
             </section>
         </>

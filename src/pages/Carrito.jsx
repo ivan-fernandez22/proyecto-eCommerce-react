@@ -33,6 +33,7 @@ function Carrito() {
                     <>
                         <h3 className="carrito-precio-final">Precio final: ${precioFinal()}</h3>
                         <button onClick={handleVaciarCarrito} className="boton-vaciar">Vaciar</button>
+                        <Link to="/checkout"><button className="boton-finalizar-compra">Finalizar compra</button></Link>
                     </> :
                     <>
                         <h3 className="carrito-vaciado">Su carrito se encuentra vacio <i className="bi bi-emoji-frown"></i></h3>

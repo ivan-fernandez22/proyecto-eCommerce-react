@@ -42,11 +42,31 @@ body {
   color: black;
 }
 
+@media (min-width: 1024px) {
+  .png-carrito {
+    padding: 4px;
+    width: 40px;
+  }
+
+  #numero-carrito {
+    font-size: 1.4rem;
+    margin-left: 1px;
+    position: relative;
+    top: 2px;
+  }
+}
+
 
 /*------------ NAVBAR ----------*/
 .navBg {
   background-color: #ac9378;
   display: flex;
+}
+
+h1 {
+  font-family: 'Alumni Sans Inline One', sans-serif;
+  font-size: 1.7rem !important;
+  margin-top: 10px !important;
 }
 
 .container {
@@ -65,10 +85,40 @@ body {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 1.85rem !important;
+  }
   .container {
-    min-width: 100vw !important;
-    gap: 30px;
-    justify-content: space-around !important;
+    display: flex;
+    min-width: 100vw;
+  }
+
+  .navbar-collapse {
+    max-width: 550px !important;
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  .navbar-collapse {
+    max-width: 600px !important;
+  }
+
+  .nav-link {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .navbar-collapse {
+    max-width: 650px !important;
+  }
+  .nav-link {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -77,17 +127,38 @@ body {
 
 .h2-bienvenida {
   font-family: 'Domine', serif;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   margin-top: 2rem;
   color: black;
 }
 
 .texto-bienvenida {
   font-family: 'Hind', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 90%;
   margin-left: 5%;
   color: black;
+}
+
+@media (min-width: 1024px) {
+  .h2-bienvenida {
+    font-size: 1.8rem;
+  }
+
+  .texto-bienvenida {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .h2-bienvenida {
+    font-size: 2rem;
+  }
+
+  .texto-bienvenida {
+    font-size: 1.3rem;
+  }
 }
 
 
@@ -106,7 +177,7 @@ body {
 
 .texto-contacto {
   font-family: 'Domine', serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 95%;
   margin-left: 2.5vw;
   color: white;
@@ -120,6 +191,7 @@ body {
   border: 2px solid black;
   background-color: #ac9378;
   margin-top: 1rem;
+
   a {
     text-decoration: none;
     color: white;
@@ -130,6 +202,7 @@ body {
 
 .boton-contacto:hover {
   background-color: white;
+
   a {
     color: #ac9378;
   }
@@ -142,17 +215,62 @@ body {
   top: 3px;
 }
 
+@media (min-width: 768px) {
+  .container-contacto {
+    min-height: 170px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .texto-contacto {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .texto-contacto {
+    font-size: 1.25rem;
+  }
+  .boton-contacto {
+    a {
+      font-size: 1.3rem;
+    }
+  }
+}
+
 
 
 /*---------- CARRUSEL ----------*/
 
 .carousel {
-  width: 100vw;
-  margin-top: 2rem;
+  width: 100%;
 }
 
 .carousel-item {
-  height: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-inner {
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item {
+    height: 650px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .carousel-item {
+    height: 800px;
+  }
 }
 
 
@@ -162,7 +280,6 @@ body {
 #info-contenedor {
   width: 100%;
   background-color: #48302b;
-  margin-top: 3rem;
   min-height: 225px;
   align-items: center;
   font-family: 'Hind', sans-serif;
@@ -174,7 +291,6 @@ body {
   justify-content: center;
   width: 100%;
 }
-
 
 .bi-truck {
   margin-right: 10px;
@@ -198,7 +314,6 @@ body {
   margin-top: -10px;
   color: white;
 }
-
 
 #info-pagos-div {
   text-align: center;
@@ -224,7 +339,6 @@ body {
   color: white;
 }
 
-
 #info-wspp-div {
   text-align: center;
   display: flex;
@@ -245,6 +359,66 @@ body {
   color: white;
 }
 
+@media (min-width: 1024px) {
+  #info-contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    min-height: 150px;
+  }
+
+  #info-envios-div {
+    align-items: center;
+  }
+
+  .bi-truck {
+    font-size: 60px;
+    margin-left: 1rem;
+  }
+
+  .info-envios-estructura {
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+
+  #info-envios-titulo {
+    font-size: 1.4rem;
+  }
+
+  #info-envios-texto {
+    font-size: 1.3rem;
+    margin-top: -10px;
+  }
+
+  #info-pagos-div {
+    align-items: center;
+  }
+
+  .bi-credit-card-fill {
+    font-size: 60px;
+  }
+
+  .info-pagos-estructura {
+    margin-right: 2rem;
+  }
+
+  #info-pagos-titulo {
+    font-size: 1.4rem;
+  }
+
+  #info-wspp-div {
+    align-items: center;
+  }
+
+  .bi-whatsapp {
+    font-size: 60px;
+  }
+
+  #info-wspp-titulo {
+    font-size: 1.4rem;
+  }
+}
 
 
 /*------------CATEGORIAS-----------*/
@@ -262,8 +436,35 @@ body {
   height: 350px;
   margin-top: 3rem;
   box-shadow: 0px 0px 10px 10px black;
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
+
+@media (min-width: 768px) {
+  .foto-categorias {
+    width: 55%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .div-categorias {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  .foto-categorias {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .foto-categorias {
+    width: 90%;
+    height: 600px;
+  }
+}
+
 
 
 
@@ -286,7 +487,7 @@ body {
   font-family: 'Domine', serif;
   font-size: 1.2rem;
   text-decoration: none;
-  background-color:#ac9378;
+  background-color: #ac9378;
   color: black;
   border-radius: 9px 9px 9px 9px;
   border: 1px solid black;
@@ -299,6 +500,56 @@ body {
   margin-left: 5vw;
   gap: 30px 20px;
   margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .titulo-productos {
+    font-size: 2.1rem;
+  }
+
+  .boton-categoria {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .titulo-productos {
+    font-size: 2.3rem;
+    margin-top: 5rem;
+  }
+
+  .categorias-prods {
+    margin-top: 2rem;
+  }
+
+  .productos-div {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 32% 32% 32%;
+    gap: 30px 20px;
+    margin-top: 2rem;
+    margin-left: 5vw;
+  }
+}
+
+
+@media (min-width: 1700px) {
+  .titulo-productos {
+    font-size: 2.5rem;
+  }
+
+  .boton-categoria {
+    font-size: 1.6rem;
+  }
+
+  .productos-div {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 23% 23% 23% 23%;
+    gap: 30px 20px;
+    margin-top: 3rem;
+    margin-left: 6vw;
+  }
 }
 
 
@@ -356,6 +607,30 @@ body {
 .ver-mas:hover {
   background-color: white;
   color: #333;
+}
+
+@media (min-width: 768px) {
+  .producto {
+    min-height: 370px;
+  }
+
+  .img-producto {
+    width: 280px;
+    height: 200px;
+    border-radius: 19px 19px 19px 19px;
+  }
+
+  .titulo-producto {
+    font-size: 1.4rem;
+  }
+
+  .stock-producto {
+    font-size: 1.1rem;
+  }
+
+  .precio-producto {
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -419,6 +694,45 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+@media (min-width: 768px) {
+  .item-detail-img {
+    width: 70%;
+  }
+  .item-detail-container {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item-detail {
+    display: flex;
+  }
+  .item-detail-img {
+    height: 480px;
+    margin-top: 1rem;
+    border: 2px solid black;
+    border-radius: 19px 0px 0px 19px;
+  }
+  .item-detail-container {
+    border-radius: 0px 19px 19px 0px;
+    height: 480px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .item-detail-img {
+    width: 60%;
+    height: 480px;
+    margin-top: 1rem;
+    border: 2px solid black;
+    border-radius: 19px 0px 0px 19px;
+  }
+  .item-detail-container {
+    border-radius: 0px 19px 19px 0px;
+    height: 480px;
+  }
+}
+
 
 /*---------------ITEM COUNT------------------*/
 
@@ -449,7 +763,8 @@ body {
   font-size: 1.5rem;
 }
 
-.item-count button:hover, .agregar-al-carrito:hover {
+.item-count button:hover,
+.agregar-al-carrito:hover {
   background-color: beige;
   color: black;
 }
@@ -457,12 +772,19 @@ body {
 .agregar-al-carrito {
   width: auto;
   height: auto;
+  font-family: 'Hind', sans-serif;
   background-color: #48302b;
   color: white;
   margin-top: 1rem;
   padding: 0.4rem;
   border-radius: 0.7rem;
   border: 1px solid black;
+}
+
+@media (min-width: 1700px) {
+  .agregar-al-carrito {
+    font-size: 1.3rem;
+  }
 }
 
 
@@ -565,11 +887,13 @@ body {
   color: #833AB4;
   margin-right: 5px;
 }
+
 .redes-fb-contacto {
   font-size: 1.5rem;
   color: #3b5998;
   margin-right: 5px;
 }
+
 .redes-tw-contacto {
   font-size: 1.5rem;
   color: #00acee;
@@ -584,7 +908,6 @@ body {
   font-size: 2rem;
   color: black;
   width: 100%;
-  height: 45px;
   margin-top: 1rem;
 }
 
@@ -646,9 +969,31 @@ body {
   color: white;
   font-size: 1.2rem;
   border: 1px solid black;
-  background-color: #6a4e36;
+  background-color: #333;
   margin-top: 1rem;
   font-family: 'Domine', serif;
+}
+
+.boton-vaciar:hover {
+  background-color: white;
+  color:#333;
+}
+
+.boton-finalizar-compra {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  background-color: #ac9378;
+  margin-top: 1rem;
+  font-family: 'Domine', serif;
+  margin-left: 3rem;
+}
+
+.boton-finalizar-compra:hover {
+  color: #ac9378;
+  background-color: whitesmoke;
 }
 
 .carrito-vaciado {
@@ -670,6 +1015,197 @@ body {
   margin-top: 1rem;
 }
 
+@media (min-width: 768px) {
+  .carrito-titulo {
+    font-size: 2.2rem;
+    margin-top: 2rem;
+  }
+  .carrito-container {
+    height: 150px;
+  }
+  .container-detalles {
+    display: flex;
+    gap: 20px;
+  }
+  .carrito-prod-nombre {
+    position: relative;
+    top: -2px;
+  }
+  .carrito-prod-precio-unidad {
+    position: relative;
+    top: 0px;
+  }
+  .carrito-prod-precio-total {
+    position: relative;
+    top: 0px;
+  }
+  .carrito-prod-cantidad {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carrito-titulo {
+    font-size: 2.3rem;
+  }
+  .carrito-container {
+    height: 170px;
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  .img-carrito {
+    width: 140px;
+    height: 140px;
+  }
+  .container-detalles {
+    gap: 40px;
+  }
+  .carrito-prod-nombre {
+    font-size: 1.6rem;
+  }
+  .carrito-prod-precio-unidad {
+    font-size: 1.2rem;
+  }
+  .carrito-prod-precio-total {
+    font-size: 1.2rem;
+  }
+  .carrito-prod-cantidad {
+    font-size: 1.2rem;
+  }
+  .boton-vaciar {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (min-width: 1700px) {
+  .carrito-titulo {
+    font-size: 2.4rem;
+  }
+  .carrito-container {
+    height: 200px;
+    width: 70vw;
+    margin-left: 15vw;
+  }
+  .img-carrito {
+    width: 160px;
+    height: 160px;
+  }
+  .container-detalles {
+    gap: 50px;
+  }
+  .carrito-prod-nombre {
+    font-size: 1.9rem;
+  }
+  .carrito-prod-precio-unidad {
+    font-size: 1.4rem;
+  }
+  .carrito-prod-precio-total {
+    font-size: 1.4rem;
+  }
+  .carrito-prod-cantidad {
+    font-size: 1.4rem;
+  }
+  .boton-vaciar {
+    font-size: 1.4rem;
+  }
+}
+
+
+/*-------------- CHECKOUT -----------------*/
+
+.titulo-checkout {
+  font-family: 'Domine', serif;
+  font-size: 2rem;
+  color: black;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.formulario-checkout {
+  width: 80vw;
+  min-height: 200px;
+  background-color: #48302b;
+  border-radius: 20px;
+  margin-left: 10vw;
+  margin-top: 1rem;
+}
+
+.input-checkout {
+  margin-top: 1rem;
+  border-radius: 20px;
+  width: 60vw;
+  border: transparent;
+}
+
+.input-checkout::placeholder {
+  color: #48302b;
+}
+
+.boton-checkout-comprar {
+  padding: 0.5rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid black;
+  background-color: #ac9378;
+  margin-top: 1rem;
+  font-family: 'Domine', serif;
+}
+
+.boton-checkout-comprar:hover {
+  color: #ac9378;
+  background-color: whitesmoke;
+}
+
+.titulo-compra-realizada {
+  font-family: 'Domine', serif;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 2rem;
+  color: beige;
+}
+
+.texto-compra-realizada {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .formulario-checkout {
+    width: 70vw;
+    margin-left: 15vw;
+    min-height: 240px;
+  }
+  
+  .input-checkout {
+    margin-top: 1.5rem;
+    width: 50vw;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .formulario-checkout {
+    width: 60vw;
+    margin-left: 20vw;
+    min-height: 280px;
+  }
+  
+  .input-checkout {
+    margin-top: 2rem;
+    width: 50vw;
+    font-size: 1.4rem;
+  }
+
+  .boton-checkout-comprar {
+    font-size: 1.2rem;
+  }
+}
+
 
 /*-------------------- FOOTER ----------------*/
 
@@ -677,12 +1213,13 @@ footer {
   margin-top: 3rem;
   background-color: #ac9378;
   text-align: center;
-  height: 725px;
+  height: 605px;
 }
 
 .footer-nav {
   position: relative;
   top: 1rem;
+
   a {
     text-decoration: none;
     color: white;
@@ -812,6 +1349,7 @@ footer {
 
   .redes-ig {
     font-size: 1.3rem;
+
     &:hover {
       font-size: 1.4rem;
     }
@@ -819,6 +1357,7 @@ footer {
 
   .redes-fb {
     font-size: 1.3rem;
+
     &:hover {
       font-size: 1.4rem;
     }
@@ -826,6 +1365,7 @@ footer {
 
   .redes-tw {
     font-size: 1.3rem;
+
     &:hover {
       font-size: 1.4rem;
     }

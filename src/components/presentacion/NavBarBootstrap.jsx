@@ -8,7 +8,7 @@ function BasicExample() {
     return (
         <Navbar expand="md" className="navBg">
             <Container>
-                <Navbar.Brand as={Link} to="/">Vintage del sur</Navbar.Brand>
+                <Navbar.Brand as={Link} to="/"><h1>Southern Essences</h1></Navbar.Brand>
                 <CartWidget />
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

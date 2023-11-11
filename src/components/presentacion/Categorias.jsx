@@ -7,15 +7,15 @@ function Categorias () {
     return (
         <div className="div-categorias">
 
-            <Link to="/Remeras" className="categorias">
+            <Link to="/productos/remeras" className="categorias">
                 <img className="foto-categorias" src={portada1} alt="portada-remeras"/>
             </Link>
 
-            <Link to="/Buzos" className="categorias">
+            <Link to="/productos/buzos" className="categorias">
                 <img className="foto-categorias" src={portada2} alt="portada-buzos"/>
             </Link>
 
-            <Link to="/Pantalones" className="categorias">
+            <Link to="/productos/pantalones" className="categorias">
                 <img className="foto-categorias" src={portada3} alt="portada-jeans"/>
             </Link>
 
